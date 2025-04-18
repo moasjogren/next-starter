@@ -1,1 +1,1 @@
-# next-starter
+Next Template
