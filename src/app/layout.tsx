@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "../context/ThemeContext";
-import { Header } from "@/components/layout/Header/Header";
-import { Footer } from "@/components/layout/Footer/Footer";
+import { Header } from "@/components/shared/Header/Header";
+import { Footer } from "@/components/shared/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Next starter",

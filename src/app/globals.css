@@ -1,15 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-:root {
-  --white: #fff;
-  --black: #000;
-  --grey: #ccc;
+.theme-light {
+  --bg-color: #fafafa;
+  --text-color: #000;
+
+  --elevation-1: rgba(0 0 0 / 15%);
+  --elevation-2: rgba(0 0 0 / 20%);
+}
+
+.theme-dark {
+  --bg-color: #121212;
+  --text-color: #fff;
+
+  --elevation-1: rgba(100 100 100 / 15%);
+  --elevation-2: rgba(100 100 100 / 20%);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  background-color: var(--bg-color);
 }
 
 html,
@@ -19,11 +33,10 @@ body {
 }
 
 body {
-  color: var(--black);
-  background: var(--white);
+  color: var(--text-color);
+  background: var(--bg-color);
   font-family: Open Sans, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: 0.3s;
 }
 
 a {
