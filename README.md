@@ -1,1 +1,4 @@
-Next Template
+Template to use with degit.
+
+
+
